@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#componentNavbar {
+  nav {
+    background-color: #60bedc !important;
+    height: 70px;
+  }
+  .diatas-nav {
+    height: 35px;
+    font-weight: 300;
+    font-size: 14px;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+#kategoriCard {
+  a {
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .e-card {
+    border: solid 0.2px #cacaca;
+    border-radius: 8px;
+    padding: 12px;
+    padding-bottom: 0;
+    display: block;
+    text-align: center;
+    transition: all 0.4s;
+    width: 236.44px;
+    &:hover {
+      background: #f6f6f6;
+      text-decoration: underline;
+    }
+    img {
+      width: 203.34px;
+      border-radius: 8px;
+      transition: all 0.4s;
+      &:hover {
+        filter: grayscale(50%);
+      }
+    }
+  }
+}

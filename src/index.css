@@ -1,13 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#componentNavbar nav {
+  background-color: #60bedc !important;
+  height: 70px;
 }
+
+#componentNavbar .diatas-nav {
+  height: 35px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#componentNavbar .diatas-nav a:hover {
+  text-decoration: none;
+}
+
+#kategoriCard a {
+  color: black;
+}
+
+#kategoriCard a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#kategoriCard .e-card {
+  border: solid 0.2px #cacaca;
+  border-radius: 8px;
+  padding: 12px;
+  padding-bottom: 0;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 236.44px;
+}
+
+#kategoriCard .e-card:hover {
+  background: #f6f6f6;
+  text-decoration: underline;
+}
+
+#kategoriCard .e-card img {
+  width: 203.34px;
+  border-radius: 8px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#kategoriCard .e-card img:hover {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+/*# sourceMappingURL=index.css.map */
