@@ -1,21 +1,14 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
 import {Link} from 'react-router-dom'
 
-export default function KategoriCard(){
-  const [kategoriCard, setKategoriCard] = useState([]);
-  useEffect(() => {
-    axios.get(`http://localhost:8000/api/kategoriCard/`)
-     .then(results => setKategoriCard(results.data))
-  })
+export default function KategoriCard({kategoriCard}){
 
   return(
     <div id="kategoriCard" className="container mt-5">
       <div className="row">
-        {kategoriCard.map(kc => {
+        {kategoriCard ? kategoriCard.map(kc => {
           return(
-            <div className="col-md-3">
-              <Link to={`kategori/${kc.id}`}>
+            <div className="col-md-3" key={kc.id}>
+              <Link to={`c/${kc.id}`}>
                 <div className="e-card">
                   <img src={kc.gambar} alt={kc.title} className="e-card-img"/>
                   <p className="e-card-title mt-3">
@@ -25,7 +18,7 @@ export default function KategoriCard(){
               </Link>
             </div>
           )
-        })}
+        }) : null}
       </div>
     </div>
   )
